@@ -38,35 +38,22 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
 <div class="refresh">live · refreshed 2026-06-20</div></div>
 <div class="stats">
 <div class="stat"><div class="n">11</div><div class="l">Total jobs</div></div>
-<div class="stat"><div class="n" style="color:#15803d">7</div><div class="l">Healthy</div></div>
-<div class="stat"><div class="n" style="color:#1d4ed8">4</div><div class="l">Ready</div></div>
+<div class="stat"><div class="n" style="color:#15803d">6</div><div class="l">Healthy</div></div>
+<div class="stat"><div class="n" style="color:#1d4ed8">5</div><div class="l">Ready</div></div>
 <div class="stat"><div class="n" style="color:#64748b">0</div><div class="l">Planned</div></div></div>
 <div class="grid"><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
-    <span class="name">Price Grabber</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
-  <div class="desc">Scrapes current price + stock for every live vendor</div>
-  <div class="meta">
-    <div><span class="k">Frequency</span><span class="v">weekly Sun 03:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-06-14</span></div></div>
-  <details class="book"><summary>Runbook</summary>
-    <div><span class="k">Reads from</span><span class="v">vendor sites (Woo Store API / page-mode) via vendors.csv roster</span></div>
-    <div><span class="k">Writes</span><span class="v">prices/snapshot-<date>.csv + price-history.csv  → site prices/providers</span></div>
-    <div><span class="k">Needs you</span><span class="v">(see price-spike)</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly Sun 03:00 cadence with status ok (last: 2026-06-14)</span></div>
-  </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Deep-Link Monitor</span>
     <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
   <div class="desc">Checks every buy-link still deep-links to the exact, in-stock product</div>
   <div class="meta">
-    <div><span class="k">Frequency</span><span class="v">daily 06:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-06-19</span></div></div>
+    <div><span class="k">Frequency</span><span class="v">3x/week (Mon/Wed/Fri 06:00)</span></div>
+    <div><span class="k">Last run</span><span class="v">2026-06-20</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">clean/prices.json buy-links (all ~1,700)</span></div>
     <div><span class="k">Writes</span><span class="v">buylink-history.csv + product-status.csv  → site buy-links</span></div>
     <div><span class="k">Needs you</span><span class="v">a whole vendor drops</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its daily 06:00 cadence with status ok (last: 2026-06-19)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its 3x/week (Mon/Wed/Fri 06:00) cadence with status ok (last: 2026-06-20)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Drop Detection</span>
@@ -126,12 +113,25 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">The one morning Telegram: job heartbeat + pending actions waiting on you + sanity anomalies</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">daily 07:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-06-19</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-06-20</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">loop-runs.csv + Airtable + sanity-flags.csv + review-pending.csv</span></div>
     <div><span class="k">Writes</span><span class="v">Telegram</span></div>
     <div><span class="k">Needs you</span><span class="v">every morning (the dead-man's switch); job problems or items waiting on you</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its daily 07:00 cadence with status ok (last: 2026-06-19)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its daily 07:00 cadence with status ok (last: 2026-06-20)</span></div>
+  </details></div><div class="card">
+  <div class="row"><span class="dot" style="background:#b45309"></span>
+    <span class="name">Price Grabber</span>
+    <span class="pill" style="color:#b45309;background:#fef3c7">Degraded</span></div>
+  <div class="desc">Scrapes current price + stock for every live vendor</div>
+  <div class="meta">
+    <div><span class="k">Frequency</span><span class="v">weekly Sun 03:00</span></div>
+    <div><span class="k">Last run</span><span class="v">2026-06-20</span></div></div>
+  <details class="book"><summary>Runbook</summary>
+    <div><span class="k">Reads from</span><span class="v">vendor sites (Woo Store API / page-mode) via vendors.csv roster</span></div>
+    <div><span class="k">Writes</span><span class="v">prices/snapshot-<date>.csv + price-history.csv  → site prices/providers</span></div>
+    <div><span class="k">Needs you</span><span class="v">(see price-spike)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly Sun 03:00 cadence with status ok (last: 2026-06-20)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#1d4ed8"></span>
     <span class="name">Price-Spike Alert</span>
