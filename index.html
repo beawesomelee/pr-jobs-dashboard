@@ -165,12 +165,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Flags out-of-band $/mg, mcg/sub-mg vials, FX errors, variant mis-grouping before they hit the rankings</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-07-19</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-07-20</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">clean/prices.json</span></div>
     <div><span class="k">Writes</span><span class="v">clean/sanity-flags.csv</span></div>
     <div><span class="k">Needs you</span><span class="v">anomalies surfaced in the daily digest</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-07-19)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-07-20)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Daily Ops Digest</span>
@@ -178,12 +178,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">The one morning Telegram: job heartbeat + pending actions waiting on you + sanity anomalies</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">daily 07:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-07-19</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-07-20</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">loop-runs.csv + Airtable + sanity-flags.csv + review-pending.csv</span></div>
     <div><span class="k">Writes</span><span class="v">Telegram</span></div>
     <div><span class="k">Needs you</span><span class="v">every morning (the dead-man's switch); job problems or items waiting on you</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its daily 07:00 cadence with status ok (last: 2026-07-19)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its daily 07:00 cadence with status ok (last: 2026-07-20)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Weekly Growth Digest</span>
@@ -191,12 +191,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">GA4 snapshot to Telegram: weekly traffic + acquisition sources + the peptide conversion funnel</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly Mon 08:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-07-13</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-07-20</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">GA4 Data API (property 524497572) via self-managed OAuth token</span></div>
     <div><span class="k">Writes</span><span class="v">Telegram Ops group + prices/ga-weekly-history.csv</span></div>
     <div><span class="k">Needs you</span><span class="v">every Monday (growth report); auth-expired alert</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly Mon 08:00 cadence with status ok (last: 2026-07-13)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly Mon 08:00 cadence with status ok (last: 2026-07-20)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Manual-Vendor Liveness</span>
@@ -204,12 +204,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Daily HTTP liveness check for manual (Joana-priced) vendors the weekly scrape never touches; distinguishes a real death (402/404/000/'store unavailable') from a Cloudflare bot-block (403)</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">daily 11:30</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-07-19</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-07-20</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">clean/vendors.csv (manual vendors)</span></div>
     <div><span class="k">Writes</span><span class="v">clean/manual-liveness-flags.csv + Telegram</span></div>
     <div><span class="k">Needs you</span><span class="v">a manual vendor store goes dead</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its daily 11:30 cadence with status ok (last: 2026-07-19)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its daily 11:30 cadence with status ok (last: 2026-07-20)</span></div>
   </details></div></div>
 <div class="foot">Auto-generated by ops-health · updates on every run</div>
 </div></body></html>
