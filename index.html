@@ -35,7 +35,7 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
 @media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}}
 </style></head><body><div class="wrap">
 <div class="head"><div><div class="brand">Peptides Rated</div><h1>Jobs Dashboard</h1></div>
-<div class="refresh">live · refreshed 2026-08-29</div></div>
+<div class="refresh">live · refreshed 2026-08-30</div></div>
 <div class="stats">
 <div class="stat"><div class="n">14</div><div class="l">Total jobs</div></div>
 <div class="stat"><div class="n" style="color:#15803d">14</div><div class="l">Healthy</div></div>
@@ -48,12 +48,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Scrapes current price + stock for every live vendor</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly Sun 03:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-08-23</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-08-30</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">vendor sites (Woo Store API / page-mode) via vendors.csv roster</span></div>
     <div><span class="k">Writes</span><span class="v">prices/snapshot-<date>.csv + price-history.csv  → site prices/providers</span></div>
     <div><span class="k">Needs you</span><span class="v">(see price-spike)</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly Sun 03:00 cadence with status ok (last: 2026-08-23)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly Sun 03:00 cadence with status ok (last: 2026-08-30)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Price-Spike Alert</span>
@@ -61,12 +61,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Flags a product whose price jumped >=60% vs its last run</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-08-23</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-08-30</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">price-history.csv (this run vs previous)</span></div>
     <div><span class="k">Writes</span><span class="v">price-spikes-<date>.csv (+ Telegram)</span></div>
     <div><span class="k">Needs you</span><span class="v">any product price up >=60%</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-23)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-30)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Deep-Link Monitor</span>
@@ -87,12 +87,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Detects dead/OOS products + dead vendors (incl. API-phantom delistings)</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-08-23</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-08-30</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">snapshot + vendor sitemaps</span></div>
     <div><span class="k">Writes</span><span class="v">product-state.csv + vendor-state.csv  → site</span></div>
     <div><span class="k">Needs you</span><span class="v">a whole vendor drops</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-23)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-30)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">New-Peptide @ Vendor</span>
@@ -100,12 +100,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Catches a tracked peptide an existing vendor starts carrying</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-08-23</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-08-30</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">full vendor catalog (scrape, pre-filter)</span></div>
     <div><span class="k">Writes</span><span class="v">new-peptide-delta-<date>.csv  → site (auto-add if tracked)</span></div>
     <div><span class="k">Needs you</span><span class="v">a new tracked peptide is added</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-23)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-30)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">mg-Correctness + New-Size</span>
@@ -113,12 +113,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Verifies parsed mg + catches new vial sizes (grab-all for now)</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-08-23</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-08-30</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">catalog + Woo variations</span></div>
     <div><span class="k">Writes</span><span class="v">vendor-peptide-size-state.csv + new-size-delta + mg-incomplete.csv (Joana worklist) -> site</span></div>
     <div><span class="k">Needs you</span><span class="v">a new vial size added, or a product priced but missing mg/$per-mg</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-23)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-30)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">New-Vendor Discovery</span>
@@ -139,12 +139,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Tracks every job's last run + health; local run-on-wake; alerts if a job is down</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">local, on each run + wake</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-08-29</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-08-30</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">prices/loop-runs.csv (the run ledger)</span></div>
     <div><span class="k">Writes</span><span class="v">clean/jobs-status.csv (this dashboard)</span></div>
     <div><span class="k">Needs you</span><span class="v">a job is down / missed its run</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its local, on each run + wake cadence with status ok (last: 2026-08-29)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its local, on each run + wake cadence with status ok (last: 2026-08-30)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Quarterly Score Review</span>
@@ -165,12 +165,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Flags out-of-band $/mg, mcg/sub-mg vials, FX errors, variant mis-grouping before they hit the rankings</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-08-29</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-08-30</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">clean/prices.json</span></div>
     <div><span class="k">Writes</span><span class="v">clean/sanity-flags.csv</span></div>
     <div><span class="k">Needs you</span><span class="v">anomalies surfaced in the daily digest</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-29)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-08-30)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Daily Ops Digest</span>
