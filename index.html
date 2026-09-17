@@ -35,16 +35,16 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
 @media(max-width:560px){.stats{grid-template-columns:repeat(2,1fr)}}
 </style></head><body><div class="wrap">
 <div class="head"><div><div class="brand">Peptides Rated</div><h1>Jobs Dashboard</h1></div>
-<div class="refresh">live · refreshed 2026-09-10</div></div>
+<div class="refresh">live · refreshed 2026-09-17</div></div>
 <div class="stats">
 <div class="stat"><div class="n">14</div><div class="l">Total jobs</div></div>
-<div class="stat"><div class="n" style="color:#15803d">14</div><div class="l">Healthy</div></div>
-<div class="stat"><div class="n" style="color:#1d4ed8">0</div><div class="l">Ready</div></div>
+<div class="stat"><div class="n" style="color:#15803d">4</div><div class="l">Healthy</div></div>
+<div class="stat"><div class="n" style="color:#1d4ed8">10</div><div class="l">Ready</div></div>
 <div class="stat"><div class="n" style="color:#64748b">0</div><div class="l">Planned</div></div></div>
 <div class="grid"><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
     <span class="name">Price Grabber</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
   <div class="desc">Scrapes current price + stock for every live vendor</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly Sun 03:00</span></div>
@@ -55,9 +55,9 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
     <div><span class="k">Needs you</span><span class="v">(see price-spike)</span></div>
     <div><span class="k">Healthy</span><span class="v">runs on its weekly Sun 03:00 cadence with status ok (last: 2026-09-06)</span></div>
   </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
     <span class="name">Price-Spike Alert</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
   <div class="desc">Flags a product whose price jumped >=60% vs its last run</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
@@ -68,9 +68,9 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
     <div><span class="k">Needs you</span><span class="v">any product price up >=60%</span></div>
     <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-09-06)</span></div>
   </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
     <span class="name">Deep-Link Monitor</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
   <div class="desc">Checks every buy-link still deep-links to the exact, in-stock product</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">3x/week (Mon/Wed/Fri 06:00)</span></div>
@@ -81,9 +81,9 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
     <div><span class="k">Needs you</span><span class="v">a whole vendor drops</span></div>
     <div><span class="k">Healthy</span><span class="v">runs on its 3x/week (Mon/Wed/Fri 06:00) cadence with status ok (last: 2026-09-09)</span></div>
   </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
     <span class="name">Drop Detection</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
   <div class="desc">Detects dead/OOS products + dead vendors (incl. API-phantom delistings)</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
@@ -94,9 +94,9 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
     <div><span class="k">Needs you</span><span class="v">a whole vendor drops</span></div>
     <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-09-06)</span></div>
   </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
     <span class="name">New-Peptide @ Vendor</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
   <div class="desc">Catches a tracked peptide an existing vendor starts carrying</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
@@ -107,9 +107,9 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
     <div><span class="k">Needs you</span><span class="v">a new tracked peptide is added</span></div>
     <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-09-06)</span></div>
   </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
     <span class="name">mg-Correctness + New-Size</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
   <div class="desc">Verifies parsed mg + catches new vial sizes (grab-all for now)</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">weekly (rides scrape)</span></div>
@@ -119,6 +119,58 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
     <div><span class="k">Writes</span><span class="v">vendor-peptide-size-state.csv + new-size-delta + mg-incomplete.csv (Joana worklist) -> site</span></div>
     <div><span class="k">Needs you</span><span class="v">a new vial size added, or a product priced but missing mg/$per-mg</span></div>
     <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-09-06)</span></div>
+  </details></div><div class="card">
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
+    <span class="name">Daily Ops Digest</span>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
+  <div class="desc">The one morning Telegram: job heartbeat + pending actions waiting on you + sanity anomalies</div>
+  <div class="meta">
+    <div><span class="k">Frequency</span><span class="v">daily 07:00</span></div>
+    <div><span class="k">Last run</span><span class="v">2026-09-10</span></div></div>
+  <details class="book"><summary>Runbook</summary>
+    <div><span class="k">Reads from</span><span class="v">loop-runs.csv + Airtable + sanity-flags.csv + review-pending.csv</span></div>
+    <div><span class="k">Writes</span><span class="v">Telegram</span></div>
+    <div><span class="k">Needs you</span><span class="v">every morning (the dead-man's switch); job problems or items waiting on you</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its daily 07:00 cadence with status ok (last: 2026-09-10)</span></div>
+  </details></div><div class="card">
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
+    <span class="name">Weekly Growth Digest</span>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
+  <div class="desc">GA4 snapshot to Telegram: weekly traffic + acquisition sources + the peptide conversion funnel</div>
+  <div class="meta">
+    <div><span class="k">Frequency</span><span class="v">weekly Mon 08:00</span></div>
+    <div><span class="k">Last run</span><span class="v">2026-09-07</span></div></div>
+  <details class="book"><summary>Runbook</summary>
+    <div><span class="k">Reads from</span><span class="v">GA4 Data API (property 524497572) via self-managed OAuth token</span></div>
+    <div><span class="k">Writes</span><span class="v">Telegram Ops group + prices/ga-weekly-history.csv</span></div>
+    <div><span class="k">Needs you</span><span class="v">every Monday (growth report); auth-expired alert</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly Mon 08:00 cadence with status ok (last: 2026-09-07)</span></div>
+  </details></div><div class="card">
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
+    <span class="name">Manual-Vendor Liveness</span>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
+  <div class="desc">Daily HTTP liveness check for manual (Joana-priced) vendors the weekly scrape never touches; distinguishes a real death (402/404/000/'store unavailable') from a Cloudflare bot-block (403)</div>
+  <div class="meta">
+    <div><span class="k">Frequency</span><span class="v">daily 11:30</span></div>
+    <div><span class="k">Last run</span><span class="v">2026-09-10</span></div></div>
+  <details class="book"><summary>Runbook</summary>
+    <div><span class="k">Reads from</span><span class="v">clean/vendors.csv (manual vendors)</span></div>
+    <div><span class="k">Writes</span><span class="v">clean/manual-liveness-flags.csv + Telegram</span></div>
+    <div><span class="k">Needs you</span><span class="v">a manual vendor store goes dead</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its daily 11:30 cadence with status ok (last: 2026-09-10)</span></div>
+  </details></div><div class="card">
+  <div class="row"><span class="dot" style="background:#b91c1c"></span>
+    <span class="name">SEO Health</span>
+    <span class="pill" style="color:#b91c1c;background:#fee2e2">Stale</span></div>
+  <div class="desc">GSC search-visibility trend + indexing recovery of the 11 peptide money pages missing on 2026-07-22 (measures the impact of the indexing fix); companion to ga-weekly (traffic) + geo-monthly (AI share-of-voice)</div>
+  <div class="meta">
+    <div><span class="k">Frequency</span><span class="v">weekly Mon 08:15</span></div>
+    <div><span class="k">Last run</span><span class="v">2026-09-07</span></div></div>
+  <details class="book"><summary>Runbook</summary>
+    <div><span class="k">Reads from</span><span class="v">Google Search Console API (searchanalytics + URL inspection) via gsc_token</span></div>
+    <div><span class="k">Writes</span><span class="v">clean/seo-health-history.csv + Telegram</span></div>
+    <div><span class="k">Needs you</span><span class="v">weekly visibility trend; flags when 8/11 pages recover = baseline set to start new SEO/GEO tests</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its weekly Mon 08:15 cadence with status ok (last: 2026-09-07)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">New-Vendor Discovery</span>
@@ -139,12 +191,12 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
   <div class="desc">Tracks every job's last run + health; local run-on-wake; alerts if a job is down</div>
   <div class="meta">
     <div><span class="k">Frequency</span><span class="v">local, on each run + wake</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-09-10</span></div></div>
+    <div><span class="k">Last run</span><span class="v">2026-09-17</span></div></div>
   <details class="book"><summary>Runbook</summary>
     <div><span class="k">Reads from</span><span class="v">prices/loop-runs.csv (the run ledger)</span></div>
     <div><span class="k">Writes</span><span class="v">clean/jobs-status.csv (this dashboard)</span></div>
     <div><span class="k">Needs you</span><span class="v">a job is down / missed its run</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its local, on each run + wake cadence with status ok (last: 2026-09-10)</span></div>
+    <div><span class="k">Healthy</span><span class="v">runs on its local, on each run + wake cadence with status ok (last: 2026-09-17)</span></div>
   </details></div><div class="card">
   <div class="row"><span class="dot" style="background:#15803d"></span>
     <span class="name">Quarterly Score Review</span>
@@ -171,58 +223,6 @@ h1{font-size:25px;font-weight:600;margin:3px 0 0}
     <div><span class="k">Writes</span><span class="v">clean/sanity-flags.csv</span></div>
     <div><span class="k">Needs you</span><span class="v">anomalies surfaced in the daily digest</span></div>
     <div><span class="k">Healthy</span><span class="v">runs on its weekly (rides scrape) cadence with status ok (last: 2026-09-10)</span></div>
-  </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
-    <span class="name">Daily Ops Digest</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
-  <div class="desc">The one morning Telegram: job heartbeat + pending actions waiting on you + sanity anomalies</div>
-  <div class="meta">
-    <div><span class="k">Frequency</span><span class="v">daily 07:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-09-10</span></div></div>
-  <details class="book"><summary>Runbook</summary>
-    <div><span class="k">Reads from</span><span class="v">loop-runs.csv + Airtable + sanity-flags.csv + review-pending.csv</span></div>
-    <div><span class="k">Writes</span><span class="v">Telegram</span></div>
-    <div><span class="k">Needs you</span><span class="v">every morning (the dead-man's switch); job problems or items waiting on you</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its daily 07:00 cadence with status ok (last: 2026-09-10)</span></div>
-  </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
-    <span class="name">Weekly Growth Digest</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
-  <div class="desc">GA4 snapshot to Telegram: weekly traffic + acquisition sources + the peptide conversion funnel</div>
-  <div class="meta">
-    <div><span class="k">Frequency</span><span class="v">weekly Mon 08:00</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-09-07</span></div></div>
-  <details class="book"><summary>Runbook</summary>
-    <div><span class="k">Reads from</span><span class="v">GA4 Data API (property 524497572) via self-managed OAuth token</span></div>
-    <div><span class="k">Writes</span><span class="v">Telegram Ops group + prices/ga-weekly-history.csv</span></div>
-    <div><span class="k">Needs you</span><span class="v">every Monday (growth report); auth-expired alert</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly Mon 08:00 cadence with status ok (last: 2026-09-07)</span></div>
-  </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
-    <span class="name">Manual-Vendor Liveness</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
-  <div class="desc">Daily HTTP liveness check for manual (Joana-priced) vendors the weekly scrape never touches; distinguishes a real death (402/404/000/'store unavailable') from a Cloudflare bot-block (403)</div>
-  <div class="meta">
-    <div><span class="k">Frequency</span><span class="v">daily 11:30</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-09-10</span></div></div>
-  <details class="book"><summary>Runbook</summary>
-    <div><span class="k">Reads from</span><span class="v">clean/vendors.csv (manual vendors)</span></div>
-    <div><span class="k">Writes</span><span class="v">clean/manual-liveness-flags.csv + Telegram</span></div>
-    <div><span class="k">Needs you</span><span class="v">a manual vendor store goes dead</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its daily 11:30 cadence with status ok (last: 2026-09-10)</span></div>
-  </details></div><div class="card">
-  <div class="row"><span class="dot" style="background:#15803d"></span>
-    <span class="name">SEO Health</span>
-    <span class="pill" style="color:#15803d;background:#dcfce7">Healthy</span></div>
-  <div class="desc">GSC search-visibility trend + indexing recovery of the 11 peptide money pages missing on 2026-07-22 (measures the impact of the indexing fix); companion to ga-weekly (traffic) + geo-monthly (AI share-of-voice)</div>
-  <div class="meta">
-    <div><span class="k">Frequency</span><span class="v">weekly Mon 08:15</span></div>
-    <div><span class="k">Last run</span><span class="v">2026-09-07</span></div></div>
-  <details class="book"><summary>Runbook</summary>
-    <div><span class="k">Reads from</span><span class="v">Google Search Console API (searchanalytics + URL inspection) via gsc_token</span></div>
-    <div><span class="k">Writes</span><span class="v">clean/seo-health-history.csv + Telegram</span></div>
-    <div><span class="k">Needs you</span><span class="v">weekly visibility trend; flags when 8/11 pages recover = baseline set to start new SEO/GEO tests</span></div>
-    <div><span class="k">Healthy</span><span class="v">runs on its weekly Mon 08:15 cadence with status ok (last: 2026-09-07)</span></div>
   </details></div></div>
 <div class="foot">Auto-generated by ops-health · updates on every run</div>
 </div></body></html>
